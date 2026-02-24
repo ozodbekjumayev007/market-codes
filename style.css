@@ -1,0 +1,94 @@
+.sarlavha_1_1 {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 400px;
+    border-radius: 250px;
+}
+
+.qurilish_mollari {
+    margin: 10px;
+    border: 2px solid black;
+    padding: 15px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 9px;
+}
+
+.sement, .boyoq, .gips, .armatura{
+    flex: 1 1 300px;
+    max-width: 400px;
+    min-width: 200px;
+    border: 1px solid black;
+    border-radius: 11px;
+    box-sizing: border-box;
+}
+
+.sement img, .boyoq img, .gips img, .armatura img {
+    width: 100%;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+
+.sement .sement_tarif, .boyoq .boyoq_tarif, .gips .gips_tarif, .armatura, .armatura_tarif {
+    color: black;
+    padding: 10px;
+}
+
+.sement .sement_tarif h1, .boyoq .boyoq_tarif h1, .gips .gips_tarif h1,  .armatura, .armatura_tarif h1 {
+    text-align: center;
+}
+
+.sement .sement_tarif h2, .boyoq .boyoq_tarif h2, .gips .gips_tarif h2, .armatura, .armatura_tarif h2 {
+    text-align: justify;
+}
+
+.sement .sement_tarif .sem_narxi, .boyoq .boyoq_tarif .boyoq_narxi, .gips .gips_tarif .gips_narxi, .armatura, .armatura_tarif .armatura_narxi{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+}
+.armatura {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+.armatura_tarif h2{
+    font-size: 25px;
+}
+.armatura_narxi {
+    font-size: 20px;
+}
+
+.button {
+    background-color: #ff7f50;   /* chiroyli olovrang */
+    color: white;               /* matn rangi */
+    border: none;               /* default border yo‘q */
+    border-radius: 8px;         /* yumaloq burchaklar */
+    padding: 10px 20px;         /* vertikal va gorizontal padding */
+    font-size: 16px;            /* matn kattaligi */
+    font-weight: bold;          /* matn qalinligi */
+    cursor: pointer;            /* hoverda kursor pointer */
+    transition: all 0.3s ease; /* yumshoq hover effekti */
+}
+
+/* Hover effekti */
+.button:hover {
+    background-color: #ff6347; /* biroz qorayadi */
+    transform: translateY(-2px); /* tugma biroz yuqoriga ko‘tariladi */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* yengil soya */
+}
+
+/* Fokus effekti (tab bilan tanlaganda) */
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255,127,80,0.5);
+}
